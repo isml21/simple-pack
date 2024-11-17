@@ -17,7 +17,9 @@ const Header = () => {
             <li><a href="#hubungi">Hubungi Kami</a></li>
           </ul>
         </nav>
-        <button className="login-btn">Masuk</button>
+        <button className="login-btn">LOGIN</button>
+        <button className="login-btn">REGISTRASI</button>
+        
       </div>
     </header>
   );
