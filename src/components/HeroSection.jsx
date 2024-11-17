@@ -6,7 +6,7 @@ const HeroSection = () => {
     <section className="hero-section">
       <div className="container">
         <h1>Cetak Custom Kemasan Digital Full Color!</h1>
-        <p>Bikin Produkmu Berkelas Dunia dengan Kemasan Fleksibel Full Color dari FlexyPack!</p>
+        <p>Bikin Produkmu Berkelas Dunia dengan Kemasan Simple Full Color dari Simplepack!</p>
         <button className="cta-button">
           <a href="https://wa.me/089649597039">Info Detail Produk</a>
         </button>
