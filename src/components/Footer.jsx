@@ -5,8 +5,8 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
-        <p>© 2024 FlexyPack. All rights reserved.</p>
-        <p>Hubungi kami: <a href="mailto:hello@flexypack.com">hello@flexypack.com</a> | 0813-5000-8081</p>
+        <p>© 2024 PackMael. All rights reserved.</p>
+        <p>Hubungi kami: <a href="mailto:hello@packmael.com">hello@packmael.com</a> | 0896-4959-7039</p>
       </div>
     </footer>
   );
