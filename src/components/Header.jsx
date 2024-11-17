@@ -1,7 +1,10 @@
 import React from 'react';
-import '../style/Header.css'
+import { useNavigate } from 'react-router-dom'; // Import useNavigate untuk navigasi programatik
+import '../style/Header.css';
 
 const Header = () => {
+  const navigate = useNavigate(); // Hook untuk navigasi
+
   return (
     <header className="header">
       <div className="container">
@@ -17,8 +20,8 @@ const Header = () => {
             <li><a href="#hubungi">Hubungi Kami</a></li>
           </ul>
         </nav>
-        <button className="login-btn">LOGIN</button>
-        <button className="login-btn">REGISTRASI</button>
+        {/* Navigasi ke halaman login dan registrasi */}
+        <button className="login-btn" onClick={() => navigate('/login')}>LOGIN</button>
         
       </div>
     </header>
