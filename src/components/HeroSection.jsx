@@ -8,7 +8,7 @@ const HeroSection = () => {
         <h1>Cetak Custom Kemasan Digital Full Color!</h1>
         <p>Bikin Produkmu Berkelas Dunia dengan Kemasan Simple Full Color dari Simplepack!</p>
         <button className="cta-button">
-          <a href="https://wa.me/089649597039">Info Detail Produk</a>
+          <a href="https://wa.me/081234567890">Info Detail Produk</a>
         </button>
       </div>
     </section>
