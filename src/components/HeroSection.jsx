@@ -10,14 +10,10 @@ const HeroSection = () => {
         <button className="cta-button">
           <a href="https://wa.me/089649597039">Info Detail Produk</a>
         </button>
-        <div className="image-gallery">
-          {/* Masukkan gambar produk */}
-          <img src="path-to-image1" alt="Produk 1" />
-          <img src="path-to-image2" alt="Produk 2" />
-        </div>
       </div>
     </section>
   );
 };
+
 
 export default HeroSection;
