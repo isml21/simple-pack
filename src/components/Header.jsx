@@ -22,7 +22,8 @@ const Header = () => {
         </nav>
         {/* Navigasi ke halaman login dan registrasi */}
         <button className="login-btn" onClick={() => navigate('/login')}>LOGIN</button>
-        
+        <button className="register-btn" onClick={() => navigate('/register')}>REGISTER</button>
+
       </div>
     </header>
   );
