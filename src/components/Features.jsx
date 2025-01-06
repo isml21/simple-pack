@@ -1,5 +1,6 @@
 import React from 'react';
-import '../style/Features.css'
+import '../style/Features.css';
+import { FaWhatsapp } from 'react-icons/fa'; // Import ikon WhatsApp dari react-icons
 
 const Features = () => {
   return (
@@ -18,6 +19,16 @@ const Features = () => {
           <h3>Desain Tidak Terbatas</h3>
         </div>
       </div>
+
+      {/* Tambahkan logo WhatsApp dengan link */}
+      <a
+        href="https://wa.me/6281234567890" // Ganti dengan nomor WhatsApp Anda
+        className="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaWhatsapp className="whatsapp-icon" />
+      </a>
     </section>
   );
 };
