@@ -1,0 +1,75 @@
+.cari-kemasan {
+    padding: 2rem;
+    background-color: #f8f9fa;
+  }
+  
+  .cari-kemasan .container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .cari-kemasan h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+  }
+  
+  .cari-kemasan p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .kemasan-options {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .kemasan-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .kemasan-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .kemasan-item h3 {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-top: 1rem;
+  }
+  
+  .kemasan-item p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.5rem;
+  }
+  /* button */
+
+  .nav-btn {
+    background-color: #f4f4f4; 
+    color: rgb(10, 10, 10);
+    border: none;
+    border-radius: 30px; /* Membuat tombol bulat */
+    padding: 0px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .nav-btn:hover {
+    background-color: #4a90e2; 
+    transform: scale(1.1); /* Membesarkan tombol saat hover */
+  }
+  
