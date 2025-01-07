@@ -16,13 +16,20 @@
   }
   
   .cta-button {
-    background-color: #f1c32c;
+    background-color: #ffa500; /* Warna oranye */
     color: white;
-    padding: 12px 25px;
+    padding: 10px 25px;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px; /* Sudut yang lebih tumpul */
     cursor: pointer;
     font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk kesan lebih lembut */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transisi untuk efek hover */
+  }
+  
+  .cta-button:hover {
+    background-color: #ff8c00; /* Warna oranye yang lebih gelap saat hover */
+    transform: scale(1.05); /* Sedikit membesar saat hover */
   }
   
   .cta-button a {
@@ -30,20 +37,5 @@
     color: white;
   }
   
-  .cta-button:hover {
-    background-color: #e59400;
-  }
   
-  .image-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 30px;
-  }
-  
-  .image-gallery img {
-    max-width: 150px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
   

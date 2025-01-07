@@ -38,10 +38,7 @@
     transition: color 0.3s ease;
   }
   
-  
-  
-  
-  
+
   .login-btn {
     background-color: #21cac2;
     color: #fff;
@@ -49,6 +46,8 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    border-radius: 20px; /* Sudut yang lebih tumpul */
+
   }
   
   .login-btn:hover {
@@ -62,6 +61,8 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    border-radius: 20px; /* Sudut yang lebih tumpul */
+
   }
   
   .register-btn:hover {
