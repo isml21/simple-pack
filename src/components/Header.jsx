@@ -16,10 +16,18 @@ const Header = () => {
             <li> <button className="nav-btn" onClick={() => navigate('/kemasan')}>
                 Cari Kemasan
               </button></li>
-            <li><a href="#pesan">Pesan Kemasan</a></li>
-            <li><a href="#portfolio">Portofolio</a></li>
-            <li><a href="#tentang">Tentang Kami</a></li>
-            <li><a href="#hubungi">Hubungi Kami</a></li>
+            <li><button className="nav-btn" onClick={() => navigate('/pesan')}>
+                Pesan Kemasan
+              </button></li>
+            <li><button className="nav-btn" onClick={() => navigate('/portfolio')}>
+                Portofolio
+              </button></li>
+            <li><button className="nav-btn" onClick={() => navigate('/tentang')}>
+                Tentang Kami
+              </button></li>
+            <li><button className="nav-btn" onClick={() => navigate('/hubungi')}>
+                Hubungi Kami
+              </button></li>
           </ul>
         </nav>
         {/* Navigasi ke halaman login dan registrasi */}

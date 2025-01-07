@@ -17,19 +17,30 @@
   }
   
   nav ul {
+    display: flex; /* Menggunakan Flexbox untuk pengaturan jarak */
     list-style: none;
-    display: flex;
-    gap: 20px;
-    margin: 0;
     padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    margin-right: 20px; /* Atur jarak antar item */
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0; /* Menghilangkan margin untuk item terakhir */
   }
   
   nav ul li a {
     text-decoration: none;
     color: #333;
-    font-size: 1rem;
-    font-weight: 500;
+    font-weight: bold;
+    transition: color 0.3s ease;
   }
+  
+  
+  
+  
   
   .login-btn {
     background-color: #21cac2;
