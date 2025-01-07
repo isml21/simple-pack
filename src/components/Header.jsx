@@ -13,9 +13,7 @@ const Header = () => {
         </div>
         <nav>
           <ul>
-            <li> <button className="nav-btn" onClick={() => navigate('/kemasan')}>
-                Cari Kemasan
-              </button></li>
+            <li> <button className="nav-btn" onClick={() => navigate('/kemasan')}>Cari Kemasan</button></li>
             <li><a href="#pesan">Pesan Kemasan</a></li>
             <li><a href="#portfolio">Portofolio</a></li>
             <li><a href="#tentang">Tentang Kami</a></li>
