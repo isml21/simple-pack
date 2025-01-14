@@ -11,7 +11,7 @@
   
   .cari-kemasan h2 {
     font-size: 2rem;
-    color: #007bff;
+    color: #21cac2;
     margin-bottom: 1rem;
   }
   
@@ -55,13 +55,14 @@
     color: #555;
     margin-top: 0.5rem;
   }
-  /* button */
+
+  /* button (semua tombol) */
 
   .nav-btn {
     background-color: #f4f4f4; 
     color: rgb(10, 10, 10);
     border: none;
-    border-radius: 30px; /* Membuat tombol bulat */
+    border-radius: 10px; /* Membuat tombol bulat */
     padding: 0px 10px;
     font-size: 1rem;
     cursor: pointer;
@@ -69,7 +70,7 @@
   }
   
   .nav-btn:hover {
-    background-color: #4a90e2; 
+    background-color: #21cac2; 
     transform: scale(1.1); /* Membesarkan tombol saat hover */
   }
   
