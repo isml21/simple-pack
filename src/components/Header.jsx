@@ -9,7 +9,7 @@ const Header = () => {
     <header className="header">
       <div className="container">
         <div className="logo">
-          <h1>Simplepack</h1>
+          <h1 style={{cursor:'pointer'}} onClick={() => navigate('/')}>Simplepack</h1>
         </div>
         <nav>
           <ul>
@@ -27,6 +27,9 @@ const Header = () => {
               </button></li>
             <li><button className="nav-btn" onClick={() => navigate('/hubungi')}>
                 Hubungi Kami
+              </button></li>
+              <li><button className="nav-btn" onClick={() => navigate('/booking')}>
+                Booking
               </button></li>
 
            

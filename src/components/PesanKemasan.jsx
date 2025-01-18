@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import '../style/PesanKemasan.css';
+import { insertBooking } from '../api'; // Importing the insertBooking function
 
 const PesanKemasan = () => {
   const [formData, setFormData] = useState({
-    namaProduk: '',
-    jumlahPesanan: '',
-    jenisKemasan: '',
-    deskripsi: '',
+    ID_CUSTOMER: '',
+    ID_PRODUK: '',
+    JUMLAH_BARANG: '',
+    TANGGAL_BOOKING: '',
+    WAKTU_BOOKING: '',
   });
 
   const handleChange = (e) => {
@@ -14,16 +16,22 @@ const PesanKemasan = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    alert(`Pesanan untuk ${formData.namaProduk} telah diterima!`);
-    console.log('Data Pesanan:', formData);
-    setFormData({
-      namaProduk: '',
-      jumlahPesanan: '',
-      jenisKemasan: '',
-      deskripsi: '',
-    });
+    try {
+      await insertBooking(formData); // Sending booking data to the backend
+      alert(`Pesanan untuk produk ID ${formData.ID_PRODUK} telah diterima!`);
+      setFormData({
+        ID_CUSTOMER: '',
+        ID_PRODUK: '',
+        JUMLAH_BARANG: '',
+        TANGGAL_BOOKING: '',
+        WAKTU_BOOKING: '',
+      });
+    } catch (error) {
+      console.error('Error inserting booking:', error);
+      alert('Terjadi kesalahan saat memesan. Silakan coba lagi.');
+    }
   };
 
   return (
@@ -31,50 +39,57 @@ const PesanKemasan = () => {
       <h1>Pesan Kemasan</h1>
       <p>Isi formulir di bawah untuk memesan kemasan produk Anda.</p>
       <form onSubmit={handleSubmit} className="pesan-kemasan-form">
-        <label htmlFor="namaProduk">Nama Produk:</label>
+        <label htmlFor="ID_CUSTOMER">ID Customer:</label>
         <input
           type="text"
-          id="namaProduk"
-          name="namaProduk"
-          value={formData.namaProduk}
+          id="ID_CUSTOMER"
+          name="ID_CUSTOMER"
+          value={formData.ID_CUSTOMER}
           onChange={handleChange}
-          placeholder="Masukkan nama produk Anda"
+          placeholder="Masukkan ID Customer"
           required
         />
 
-        <label htmlFor="jumlahPesanan">Jumlah Pesanan:</label>
+        <label htmlFor="ID_PRODUK">ID Produk:</label>
+        <input
+          type="text"
+          id="ID_PRODUK"
+          name="ID_PRODUK"
+          value={formData.ID_PRODUK}
+          onChange={handleChange}
+          placeholder="Masukkan ID Produk"
+          required
+        />
+
+        <label htmlFor="JUMLAH_BARANG">Jumlah Barang:</label>
         <input
           type="number"
-          id="jumlahPesanan"
-          name="jumlahPesanan"
-          value={formData.jumlahPesanan}
+          id="JUMLAH_BARANG"
+          name="JUMLAH_BARANG"
+          value={formData.JUMLAH_BARANG}
           onChange={handleChange}
-          placeholder="Masukkan jumlah pesanan"
+          placeholder="Masukkan jumlah barang"
           required
         />
 
-        <label htmlFor="jenisKemasan">Jenis Kemasan:</label>
-        <select
-          id="jenisKemasan"
-          name="jenisKemasan"
-          value={formData.jenisKemasan}
+        <label htmlFor="TANGGAL_BOOKING">Tanggal Booking:</label>
+        <input
+          type="date"
+          id="TANGGAL_BOOKING"
+          name="TANGGAL_BOOKING"
+          value={formData.TANGGAL_BOOKING}
           onChange={handleChange}
           required
-        >
-          <option value="">Pilih jenis kemasan</option>
-          <option value="Standing Pouch">Standing Pouch</option>
-          <option value="Flat Pouch">Flat Pouch</option>
-          <option value="Spout Pouch">Spout Pouch</option>
-        </select>
+        />
 
-        <label htmlFor="deskripsi">Deskripsi Tambahan:</label>
-        <textarea
-          id="deskripsi"
-          name="deskripsi"
-          value={formData.deskripsi}
+        <label htmlFor="WAKTU_BOOKING">Waktu Booking:</label>
+        <input
+          type="time"
+          id="WAKTU_BOOKING"
+          name="WAKTU_BOOKING"
+          value={formData.WAKTU_BOOKING}
           onChange={handleChange}
-          placeholder="Tambahkan deskripsi atau catatan"
-          rows="5"
+          required
         />
 
         <button type="submit" className="submit-btn">

@@ -1,0 +1,45 @@
+/* Navigation.css */
+nav {
+    padding: 10px 20px; /* Spasi di sekitar navbar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+  }
+  
+  nav ul {
+    list-style: none; /* Menghilangkan bullet point */
+    display: flex; /* Membuat menu dalam baris */
+    justify-content: space-around; /* Spasi antar elemen */
+    margin: 0; /* Menghilangkan margin default */
+    padding: 0; /* Menghilangkan padding default */
+  }
+  
+  nav li {
+    margin: 0 10px; /* Memberikan jarak antar item */
+  }
+  
+  nav a {
+    color: white; /* Warna teks */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    font-size: 16px; /* Ukuran teks */
+    transition: color 0.3s ease; /* Animasi transisi saat hover */
+  }
+  
+  nav a:hover {
+    color: #f0a500; /* Warna saat hover */
+  }
+  
+  nav a.active {
+    font-weight: bold; /* Teks aktif lebih tebal */
+    color: #f0a500; /* Warna khusus untuk item aktif */
+  }
+  
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column; /* Menu vertikal untuk layar kecil */
+      align-items: flex-start; /* Rata kiri */
+    }
+  
+    nav li {
+      margin: 5px 0; /* Jarak antar item */
+    }
+  }
+  

@@ -1,0 +1,72 @@
+/* Gaya untuk elemen Register */
+h2 {
+    text-align: center; /* Pusatkan teks */
+    font-size: 24px; /* Ukuran font */
+    color: #333; /* Warna teks */
+    margin-bottom: 20px; /* Jarak bawah */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column; /* Susunan vertikal */
+    max-width: 400px; /* Lebar maksimum form */
+    margin: 0 auto; /* Form di tengah */
+    padding: 20px; /* Spasi dalam form */
+    background-color: #f9f9f9; /* Warna latar form */
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+  }
+  
+  label {
+    font-size: 14px; /* Ukuran teks label */
+    color: #555; /* Warna teks label */
+    margin-bottom: 8px; /* Spasi bawah label */
+  }
+  
+  input {
+    padding: 10px; /* Spasi dalam input */
+    font-size: 14px; /* Ukuran teks */
+    border: 1px solid #ccc; /* Warna border */
+    border-radius: 4px; /* Sudut membulat */
+    margin-bottom: 15px; /* Spasi bawah antar input */
+    transition: border-color 0.3s ease; /* Animasi transisi */
+  }
+  
+  input:focus {
+    border-color: #007bff; /* Warna border saat fokus */
+    outline: none; /* Menghilangkan outline default */
+  }
+  
+  button {
+    padding: 12px 15px; /* Spasi dalam tombol */
+    font-size: 16px; /* Ukuran teks tombol */
+    color: #fff; /* Warna teks tombol */
+    background-color: #007bff; /* Warna latar tombol */
+    border: none; /* Hilangkan border */
+    border-radius: 4px; /* Sudut membulat */
+    cursor: pointer; /* Ganti kursor jadi tangan */
+    transition: background-color 0.3s ease; /* Animasi transisi */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Warna tombol saat hover */
+  }
+  
+  button:active {
+    background-color: #003f7f; /* Warna tombol saat ditekan */
+  }
+  
+  @media (max-width: 480px) {
+    form {
+      padding: 15px; /* Kurangi padding pada layar kecil */
+    }
+  
+    h2 {
+      font-size: 20px; /* Kurangi ukuran teks judul */
+    }
+  
+    button {
+      font-size: 14px; /* Kurangi ukuran teks tombol */
+    }
+  }
+  
