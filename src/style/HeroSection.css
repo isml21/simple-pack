@@ -1,119 +1,30 @@
 .hero-section {
-    background-color: #21cac2;
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
-  }
-  
-  .hero-section h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  
-  .hero-section p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-  }
-  
-  .cta-button {
-    background-color: #ffa500; /* Warna oranye */
-    color: white;
-    padding: 10px 25px;
-    border: none;
-    border-radius: 20px; /* Sudut yang lebih tumpul */
-    cursor: pointer;
-    font-size: 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk kesan lebih lembut */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Transisi untuk efek hover */
-  }
-  
-  .cta-button:hover {
-    background-color: #ff8c00; /* Warna oranye yang lebih gelap saat hover */
-    transform: scale(1.05); /* Sedikit membesar saat hover */
-  }
-  
-  .cta-button a {
-    text-decoration: none;
-    color: white;
-  }
-  
-  .fleksibilitas-pesanan {
-    padding: 50px 20px;
-    background-color: #f8f9fc;
-    text-align: center;
-    font-family: "Arial", sans-serif;
-  }
-  
-  .fleksibilitas-pesanan h2 {
-    font-size: 2.5rem;
-    color: #002766;
-    margin-bottom: 20px;
-  }
-  
-  .fleksibilitas-pesanan .highlight {
-    color: #ff3366;
-  }
-  
-  .steps {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin-top: 40px;
-  }
-  
-  .step {
-    text-align: center;
-  }
-  
-  .step .icon {
-    background-color: #e6f7ff;
-    border-radius: 50%;
-    padding: 20px;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto 15px auto;
-  }
-  
-  .step .icon img {
-    width: 50%;
-    height: auto;
-  }
-  
-  .step .number {
-    background-color: #ff3366;
-    color: #fff;
-    font-size: 1.2rem;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px auto;
-  }
-  
-  .step h3 {
-    font-size: 1.2rem;
-    color: #002766;
-  }
-  
-  .detail-link {
-    margin-top: 30px;
-    font-size: 1rem;
-    color: #002766;
-  }
-  
-  .detail-link a {
-    color: #ff3366;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  
-  .detail-link a:hover {
-    text-decoration: underline;
-  }
-  
-  
+  background-image: url('../assets/herooo.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.subsection {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Light background for contrast */
+  border-radius: 8px;
+}
+
+.subsection h2 {
+  font-size: 2rem;
+  color: #002766;
+}
+
+.subsection p {
+  font-size: 1 rem;
+}
+
+.subsection img {
+  max-width: 50%;
+  height: auto;
+  margin-top: 10px;
+}

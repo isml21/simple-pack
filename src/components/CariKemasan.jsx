@@ -12,17 +12,20 @@ const CariKemasan = () => {
         </p>
         <div className="kemasan-options">
           <div className="kemasan-item">
-            <img src="/images/stand-up-pouch.jpg" alt="Kemasan Stand Up Pouch" />
+            <url src="./assets/1.png" alt="Kemasan Hero" />
+
             <h3>Kemasan Stand Up Pouch</h3>
             <p>Kemasan fleksibel yang ideal untuk berbagai produk.</p>
           </div>
           <div className="kemasan-item">
-            <img src="/images/sachet.jpg" alt="Kemasan Sachet" />
+            <url src="./assets/2.png" alt="Kemasan Pesan" />
+
             <h3>Kemasan Sachet</h3>
             <p>Solusi praktis untuk produk dalam ukuran kecil.</p>
           </div>
           <div className="kemasan-item">
-            <img src="/images/roll.jpg" alt="Kemasan Roll" />
+            <url src="./assets/3.png" alt="Kemasan Roll" />
+
             <h3>Kemasan Roll</h3>
             <p>Kemasan fleksibel berbentuk roll untuk produksi masal.</p>
           </div>

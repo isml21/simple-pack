@@ -20,3 +20,4 @@ export const insertBooking = async (bookingData) => {
     throw error.response.data;
   }
 };
+

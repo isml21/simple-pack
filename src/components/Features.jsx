@@ -1,6 +1,6 @@
 import React from 'react';
 import '../style/Features.css';
-// import { FaWhatsapp } from 'react-icons/fa'; // Import ikon WhatsApp dari react-icons
+import { FaWhatsapp } from 'react-icons/fa'; // Import ikon WhatsApp dari react-icons
 
 const Features = () => {
   return (
@@ -27,7 +27,7 @@ const Features = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        {/* <FaWhatsapp className="whatsapp-icon" /> */}
+        { <FaWhatsapp className="whatsapp-icon" /> }
       </a>
     </section>
   );

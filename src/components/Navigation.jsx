@@ -7,14 +7,14 @@ const Navigation = () => {
     <nav>
       <ul>
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/login">Login</Link></li>
-        <li><Link to="/register">Register</Link></li>
         <li><Link to="/pesan">Pesan Kemasan</Link></li>
         <li><Link to="/kemasan">Kemasan</Link></li>
-        <li><Link to="/portfolio">Portfolio</Link></li>
+        <li><Link to="/portfolio">Portofolio</Link></li>
         <li><Link to="/tentang">Tentang Kami</Link></li>
         <li><Link to="/hubungi">Hubungi Kami</Link></li>
         <li><Link to="/booking">Booking </Link></li>
+        <li><Link to="/login">Login</Link></li>
+        <li><Link to="/register">Register</Link></li>
       </ul>
     </nav>
   );
