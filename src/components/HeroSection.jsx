@@ -9,15 +9,15 @@ const HeroSection = () => {
         <p>Bikin Produkmu Berkelas Dunia dengan Kemasan Simple Full Color dari Simplepack!</p>
       </div>
 
-      <div className="subsection">
+      {/* <div className="subsection">
         <h2>Fleksibilitas Pesanan</h2>
         <p>Pesan produk sesuai kebutuhan Anda dengan fleksibilitas tinggi dan bahan terbaik.</p>
-      </div>
+      </div> */}
 
-      <div className="subsection">
+      {/* <div className="subsection">
         <h2>Proses Mudah</h2>
         <p>Ikuti langkah-langkah mudah kami untuk memesan kemasan Anda.</p>
-      </div>
+      </div> */}
 
      
     </section>
